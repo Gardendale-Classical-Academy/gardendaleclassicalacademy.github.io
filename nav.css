@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+  width: 30%;
+}
+
+li {
+  float: left;
+  font-weight: bold;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #EFD007;
+  cursor: pointer;
+}
+
+li:hover a {
+  color: black;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+#facebook {
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin: 10px;
+  margin-right: 30px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+#facebook:hover {
+  background-color: blue;
+}
+
+
+/* Mobile style rules */
+@media only screen and (max-width: 950px) {
+  ul {
+    text-align: center;
+    width: 80%;
+  }
+
+  li {
+    float: none;
+    text-align: center;
+    margin-bottom: none;
+  }
+
+  a:hover {
+    background-color: #EFD007;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  #facebook {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+}
+
+/* end of Moble style rules */

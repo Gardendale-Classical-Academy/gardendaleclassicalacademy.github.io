@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+
+html, body {
+    height: 98%;
+    width: 99%;
+}
+
+
+#header {
+    width: 100%;
+}
+
+#header h1 {
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    margin: 25px; 
+    font-size: 40px;
+}
+
+
+#header a {
+    text-decoration: none;
+    color: black;
+}
+
+iframe {
+    width: 80%;
+    margin: 25px;
+    height: 800px;
+}
+
+.mobile-alert {
+    display: none;
+}
+
+#MainContent {
+    text-align: center;
+    display: block;
+}
+
+#MainContent p {
+    margin: 25px;
+    font-size: larger;
+    text-align: left;
+    float: none;
+}
+
+#MainContent-left-column {
+    width: 45%;
+    float: left;
+    margin: 25px;
+}
+
+#MainContent-right-column {
+    width: 45%;
+    float: right;
+    margin: 25px;
+}
+
+#mobileMainContent {
+    display: none;
+}
+
+/* Mobile style rules */
+
+@media only screen and (max-width: 950px) {
+    #header h1 {
+        font-size: x-large;
+    }
+
+    .mobile-alert {
+        font-size: x-large;
+        font-family: serif;
+        color: red;
+        background-color: black;
+        width: 80%;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-alert p {
+        padding: 5px;
+    }
+
+    #MainContent {
+        display: none;
+    }
+
+    #mobileMainContent {
+        display: block;
+        width: 80%;
+        margin: 25px;
+    }
+
+    #mobileMainContent p {
+        font-size: larger;
+    }
+
+    #mobileMainContent h2 {
+        text-align: center;
+    }
+
+}
+
+/* End of mobile style rules */
